@@ -1,0 +1,101 @@
+[
+  {
+    "name": "Aso Loom Collective",
+    "city": "Lagos",
+    "country": "Nigeria",
+    "fabrics": ["aso oke", "adire", "ankara", "cotton"],
+    "moq": 50,
+    "pricePerYardUsd": 6.5,
+    "rating": 4.7,
+    "responseTimeHours": 24,
+    "notes": "Handwoven aso oke + dyed adire. Great for premium occasionwear and capsules."
+  },
+  {
+    "name": "Kente & Co Weavers",
+    "city": "Kumasi",
+    "country": "Ghana",
+    "fabrics": ["kente", "silk blend", "cotton"],
+    "moq": 30,
+    "pricePerYardUsd": 14.0,
+    "rating": 4.8,
+    "responseTimeHours": 36,
+    "notes": "Bold kente patterns with consistent repeat. Small-batch friendly."
+  },
+  {
+    "name": "Nile Sateen Mills",
+    "city": "Cairo",
+    "country": "Egypt",
+    "fabrics": ["cotton sateen", "cotton poplin", "linen"],
+    "moq": 100,
+    "pricePerYardUsd": 5.2,
+    "rating": 4.4,
+    "responseTimeHours": 48,
+    "notes": "Reliable shirting and structured dresses; smooth finishes for tailoring."
+  },
+  {
+    "name": "Atlas Linen Works",
+    "city": "Marrakesh",
+    "country": "Morocco",
+    "fabrics": ["linen", "linen viscose", "gauze"],
+    "moq": 80,
+    "pricePerYardUsd": 7.8,
+    "rating": 4.5,
+    "responseTimeHours": 48,
+    "notes": "Airy linens for resort and warm climates; muted dye palettes."
+  },
+  {
+    "name": "Sahel Dye Studio",
+    "city": "Dakar",
+    "country": "Senegal",
+    "fabrics": ["wax print", "cotton", "voile"],
+    "moq": 60,
+    "pricePerYardUsd": 4.9,
+    "rating": 4.2,
+    "responseTimeHours": 30,
+    "notes": "Fast turnaround wax prints; good for statement pieces and drops."
+  },
+  {
+    "name": "Zambezi Silk House",
+    "city": "Lusaka",
+    "country": "Zambia",
+    "fabrics": ["silk", "silk chiffon", "silk satin"],
+    "moq": 25,
+    "pricePerYardUsd": 18.5,
+    "rating": 4.6,
+    "responseTimeHours": 72,
+    "notes": "Event and bridal-grade silks; drape-forward options."
+  },
+  {
+    "name": "Cape Knit & Jersey",
+    "city": "Cape Town",
+    "country": "South Africa",
+    "fabrics": ["jersey", "rib knit", "french terry", "cotton"],
+    "moq": 120,
+    "pricePerYardUsd": 6.0,
+    "rating": 4.3,
+    "responseTimeHours": 36,
+    "notes": "Basics and elevated loungewear. Consistent GSM, solid colors."
+  },
+  {
+    "name": "Kigali Artisan Prints",
+    "city": "Kigali",
+    "country": "Rwanda",
+    "fabrics": ["block print", "cotton", "canvas"],
+    "moq": 40,
+    "pricePerYardUsd": 8.9,
+    "rating": 4.7,
+    "responseTimeHours": 42,
+    "notes": "Artisanal block prints; great for accessories and limited editions."
+  },
+  {
+    "name": "Coastal Lace Traders",
+    "city": "Accra",
+    "country": "Ghana",
+    "fabrics": ["lace", "guipure", "tulle"],
+    "moq": 35,
+    "pricePerYardUsd": 12.0,
+    "rating": 4.1,
+    "responseTimeHours": 40,
+    "notes": "Occasion lace for bridal and couture. Request swatches first."
+  }
+]
