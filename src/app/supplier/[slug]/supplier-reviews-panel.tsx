@@ -13,6 +13,10 @@ function clamp(n: number, min: number, max: number) {
   return Math.max(min, Math.min(max, n));
 }
 
+function roundToHalf(n: number) {
+  return Math.floor(n * 2 + 0.5) / 2;
+}
+
 function seededPick<T>(seed: number, arr: T[]) {
   return arr[Math.abs(seed) % arr.length]!;
 }
@@ -42,13 +46,13 @@ function makeDemoReviews(supplier: SupplierWithSlug): Review[] {
     "Clear photos + quick samples. Production came in on time for our launch.",
   ];
 
-  const base = clamp(Math.round(supplier.rating * 2) / 2, 3.5, 5);
+  const base = clamp(roundToHalf(supplier.rating), 3.5, 5);
   return [0, 1, 2].map((idx) => {
     const localSeed = seed + idx * 97;
     const jitter = ((localSeed % 5) - 2) * 0.1; // -0.2..+0.2
     return {
       buyerName: seededPick(localSeed, buyerNames),
-      rating: clamp(Math.round((base + jitter) * 2) / 2, 3, 5),
+      rating: clamp(roundToHalf(base + jitter), 3, 5),
       comment: seededPick(localSeed + 11, comments),
       purchasedFor: seededPick(localSeed + 23, purchasedFor),
       monthsAgo: 2 + (localSeed % 9),
@@ -57,18 +61,30 @@ function makeDemoReviews(supplier: SupplierWithSlug): Review[] {
 }
 
 function Stars({ rating }: { rating: number }) {
-  const full = Math.round(clamp(rating, 0, 5));
+  const clamped = clamp(rating, 0, 5);
+  const r = clamp(roundToHalf(clamped), 0, 5);
+  const full = Math.floor(r);
+  const half = r - full >= 0.5;
   return (
     <div className="flex items-center gap-1" aria-label={`Rating: ${rating} out of 5`}>
       {Array.from({ length: 5 }).map((_, i) => {
-        const on = i < full;
+        const isFull = i < full;
+        const isHalf = !isFull && half && i === full;
         return (
           <span
             key={i}
-            className={on ? "text-amber-300" : "text-white/25"}
+            className="relative inline-block leading-none"
             aria-hidden="true"
           >
-            ★
+            <span className="text-white/25">★</span>
+            {(isFull || isHalf) && (
+              <span
+                className="absolute inset-0 text-amber-300"
+                style={isHalf ? { clipPath: "inset(0 50% 0 0)" } : undefined}
+              >
+                ★
+              </span>
+            )}
           </span>
         );
       })}

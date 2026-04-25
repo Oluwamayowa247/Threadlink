@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1200" viewBox="0 0 1200 1200" fill="none">
+  <defs>
+    <!-- A subtle, fabric-inspired pattern: kente-like stripes + adire-inspired dots.
+         All strokes use low-opacity black so it can sit behind white UI. -->
+    <pattern id="threadlink-fabric" width="240" height="240" patternUnits="userSpaceOnUse">
+      <rect width="240" height="240" fill="transparent"/>
+
+      <!-- woven stripes -->
+      <path d="M0 24H240" stroke="rgba(0,0,0,0.035)" stroke-width="6"/>
+      <path d="M0 60H240" stroke="rgba(0,0,0,0.025)" stroke-width="2"/>
+      <path d="M0 96H240" stroke="rgba(0,0,0,0.03)" stroke-width="4"/>
+      <path d="M0 144H240" stroke="rgba(0,0,0,0.02)" stroke-width="2"/>
+      <path d="M0 192H240" stroke="rgba(0,0,0,0.03)" stroke-width="4"/>
+
+      <path d="M24 0V240" stroke="rgba(0,0,0,0.028)" stroke-width="4"/>
+      <path d="M72 0V240" stroke="rgba(0,0,0,0.018)" stroke-width="2"/>
+      <path d="M120 0V240" stroke="rgba(0,0,0,0.024)" stroke-width="3"/>
+      <path d="M168 0V240" stroke="rgba(0,0,0,0.016)" stroke-width="2"/>
+      <path d="M216 0V240" stroke="rgba(0,0,0,0.022)" stroke-width="3"/>
+
+      <!-- diagonal stitch -->
+      <path d="M-30 210L210 -30" stroke="rgba(0,0,0,0.018)" stroke-width="3" stroke-linecap="round" stroke-dasharray="2 10"/>
+      <path d="M30 270L270 30" stroke="rgba(0,0,0,0.018)" stroke-width="3" stroke-linecap="round" stroke-dasharray="2 10"/>
+
+      <!-- adire-like dots -->
+      <g fill="rgba(0,0,0,0.03)">
+        <circle cx="36" cy="36" r="2.2"/>
+        <circle cx="204" cy="36" r="1.8"/>
+        <circle cx="156" cy="84" r="2.0"/>
+        <circle cx="84" cy="132" r="1.7"/>
+        <circle cx="204" cy="180" r="2.1"/>
+        <circle cx="36" cy="204" r="1.9"/>
+        <circle cx="132" cy="204" r="1.6"/>
+      </g>
+
+      <!-- motif blocks -->
+      <g stroke="rgba(0,0,0,0.022)" stroke-width="2" fill="none">
+        <path d="M96 96h48v48H96z"/>
+        <path d="M102 120h36"/>
+        <path d="M120 102v36"/>
+      </g>
+    </pattern>
+  </defs>
+
+  <rect width="1200" height="1200" fill="url(#threadlink-fabric)"/>
+</svg>
+
