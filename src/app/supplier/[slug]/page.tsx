@@ -29,7 +29,7 @@ export default async function SupplierPage({
   if (!supplier) notFound();
 
   return (
-    <div className="min-h-full bg-white">
+    <div className="min-h-full bg-transparent">
       <Nav />
 
       <main className="mx-auto max-w-6xl px-6 py-12">

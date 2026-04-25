@@ -6,7 +6,7 @@ import { getSuppliers } from "@/lib/supplier-data";
 export default async function Home() {
   const suppliers = await getSuppliers();
   return (
-    <div className="min-h-full bg-white">
+    <div className="min-h-full bg-transparent">
       <Nav />
 
       <main>
